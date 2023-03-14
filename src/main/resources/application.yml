@@ -1,0 +1,23 @@
+logging:
+  level:
+    org:
+      springframework:
+        security:
+          saml: DEBUG
+      opensaml: DEBUG
+    com:
+      spring:
+        boot:
+          security:
+            saml: DEBUG
+
+service.provider.entity.id: dummybot-saml
+
+idp.metedata.url: https://login.microsoftonline.com/f5509919-81ff-418d-9a90-350a89f58ae4/federationmetadata/2007-06/federationmetadata.xml?appid=8bccb589-c8f1-4143-81e4-8130d41a0af2
+
+# you can update credentials if you want, I recommend you to keep as it is for demo purpose
+saml:
+  keystore.password: password
+  private.key:
+    alias: apollo
+    password: password
